@@ -1,0 +1,18 @@
+version: "3.8"
+
+services:
+  m-postgres:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_USER: "postgres"
+      POSTGRES_PASSWORD: "123"
+    ports:
+      - "5434:5432"
+
+  NATS:
+    image: nats-streaming
+    ports:
+      - 4222:4222
+      - 8222:8222
+    restart: always

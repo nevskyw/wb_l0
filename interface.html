@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> wb_l0</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    .header {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .header h1 {
+      color: #242226;
+      font-family:Georgia, serif;
+    }
+
+    .form-block{
+      display: table;
+      position: relative;
+      max-width: 1400px;
+      margin: 20px auto 0;
+      background: #ffffff;
+      border-radius: 30px;
+      clear: both;
+      width: 100%;
+      height: 500px;
+    }
+
+    .form-block-right{
+      display: block;
+      float: left;
+      width: 60%;
+      height: 70%;
+    }
+
+    .form-block-left{
+      display: block;
+      float: left;
+      width: 60%;
+      padding: 15px;
+    }
+
+    input[type=text] {
+      display: block;
+      width: 100%;
+      padding: 0 20px;
+      margin-bottom: 10px;
+      background: #ddf8f5;
+      line-height: 40px;
+      border-width: 0;
+      border-radius: 40px;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    input[type=submit] {
+      background-color: #4CAF50;
+      width: 100%;
+      border: none;
+      color: #fcfcfc;
+      padding: 17px 32px;
+      text-decoration: none;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 20px;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    .frame {
+      border-radius: 50px;
+      padding: 24px;
+      width: 98%;
+      height: 97%;
+      margin: 1% 1%;
+      border-color: rgb(0, 0, 0);
+      font-family: 'Times New Roman', Times, serif;
+    }
+  </style>
+</head>
+<body>
+<div class="header">
+  <h1> Задача L0</h1>
+</div>
+<div class="form-block">
+  <div class="form-block-left">
+    <form method="post" enctype="application/json" target="area">
+      <input placeholder=" Введите данные" type="text" name="order_uid" id="order_uid">
+      <input type="submit" value="Показать">
+    </form>
+  </div>
+  <div class="form-block-right">
+    <iframe class="frame" name="area" width=100% height=500></iframe>
+  </div>
+</div>
+</body>
+</html>
